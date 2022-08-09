@@ -1,0 +1,1258 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>哔哩哔哩 (゜-゜)つロ 干杯~-bilibili</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./fa/css/all.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <style>
+      .vidContainer {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+      }
+
+      .vid {
+        position: relative;
+        width: 110%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- banner部分 -->
+    <div class="banner-Container">
+      <div class="vidContainer">
+        <video
+          class="vid"
+          loop
+          autoplay="autoplay"
+          muted="muted"
+          src="./vedio/headbanner.webm"
+        ></video>
+        <!-- 导航部分 -->
+        <div class="navContainer">
+          <div class="first-nav">
+            <ul class="f-n">
+              <!-- <span class="fa fa-apple-alt ico"></span> -->
+              <li>主站</li>
+              <li>番剧</li>
+              <li>游戏中心</li>
+              <li>直播</li>
+              <li>会员购</li>
+              <li>漫画</li>
+              <li>赛事</li>
+              <li>高考季</li>
+              <li style="font-size: 16px">下载App</li>
+            </ul>
+          </div>
+          <div class="searchInput">
+            <input type="text" placeholder="无声铃鹿永远滴神~" />
+            <div class="searchBtn">
+              <a class="fa fa-search" href=""></a>
+            </div>
+          </div>
+          <div class="userSection">
+            <div class="user-left">
+              <div class="carmer">
+                <img
+                  src="./img/slience.jpg"
+                  width="36px"
+                  height="36px"
+                  alt=""
+                />
+              </div>
+              <a href="">大会员</a>
+              <a href="">消息</a>
+              <a href="">动态</a>
+              <a href="">大会员</a>
+              <a href="">历史</a>
+              <a href="">创作中心</a>
+            </div>
+            <div class="user-right">
+              <div class="userDetail">
+                <a href="javascript:;" style="color: white">投稿</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="biliLogo">
+          <img src="./img/logo.png " width="168px" alt="" />
+          <span>戳我试试</span>
+        </div>
+      </div>
+    </div>
+    <script>
+      let logo = document.querySelector(".biliLogo");
+      let srcs = document.querySelector(".vid");
+      let indexPointer = 0;
+      const lens = 4;
+      logo.onclick = function () {
+        if (indexPointer > lens - 1) {
+          indexPointer = 0;
+        } else if (indexPointer == 0) {
+          srcs.src = "./vedio/2.webm";
+          indexPointer++;
+        } else if (indexPointer == 1) {
+          srcs.src = "./vedio/3.webm";
+          indexPointer++;
+        } else if (indexPointer == 2) {
+          srcs.src = "./vedio/4.webm";
+          indexPointer++;
+        } else if (indexPointer == 3) {
+          srcs.src = "./vedio/headbanner.webm";
+          indexPointer++;
+        }
+      };
+    </script>
+    <!-- 第一部分 -->
+    <div class="first-section">
+      <div class="f-1">
+        <div class="l-1">
+          <ul class="l-ul">
+            <li>
+              <a>
+                <div
+                  class="fa fa-home circle"
+                  style="background-color: #ff5c7c"
+                ></div>
+                <p>首页</p>
+              </a>
+            </li>
+            <li>
+              <a>
+                <div
+                  class="circle"
+                  style="background-color: #feedc8; overflow: hidden"
+                >
+                  <img
+                    style="display: block"
+                    src="./img/1.webp"
+                    width="36px"
+                    height="36px"
+                  />
+                </div>
+                <p>动态</p>
+              </a>
+            </li>
+            <li>
+              <a>
+                <div
+                  class="fa fa-fire-alt circle"
+                  style="background-color: #ff716d"
+                ></div>
+                <p>热门</p>
+              </a>
+            </li>
+            <li>
+              <a>
+                <div
+                  class="fa fa-radiation-alt circle"
+                  style="background-color: #6dc781"
+                ></div>
+                <p>频道</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <span class="line"></span>
+        <div class="l-2">
+          <a href="">
+            <span>
+              动画
+              <em>999+</em>
+            </span>
+          </a>
+
+          <a href="">
+            <span>
+              音乐
+              <em>999+</em>
+            </span>
+          </a>
+          <a href="">
+            <span>
+              舞蹈
+              <em>999+</em>
+            </span>
+          </a>
+          <a href="">
+            <span>
+              知识
+              <em>999+</em>
+            </span>
+          </a>
+          <a href="">
+            <span>
+              生活
+              <em>999+</em>
+            </span>
+          </a>
+          <a href="">
+            <span>
+              时尚
+              <em>999+</em>
+            </span>
+          </a>
+          <a href="">
+            <span>
+              娱乐
+              <em>999+</em>
+            </span>
+          </a>
+          <a>
+            <span>
+              放映厅
+              <em>999+</em>
+            </span>
+          </a>
+          <a href="">
+            <span>
+              番剧
+              <em>999+</em>
+            </span>
+          </a>
+          <a href="">
+            <span>
+              国创
+              <em>999+</em>
+            </span>
+          </a>
+          <a href="">
+            <span>
+              游戏
+              <em>999+</em>
+            </span>
+          </a>
+          <a href="">
+            <span>
+              科技
+              <em>999+</em>
+            </span>
+          </a>
+          <a href="">
+            <span>
+              鬼畜
+              <em>999+</em>
+            </span>
+          </a>
+          <a href="">
+            <span>
+              资讯
+              <em>999+</em>
+            </span>
+          </a>
+          <a href="">
+            <span>
+              影视
+              <em>999+</em>
+            </span>
+          </a>
+          <a href="">
+            <span>
+              更多
+              <i class="fa fa-angle-down" style="font-size: 16px"></i>
+            </span>
+          </a>
+        </div>
+        <span class="line"></span>
+        <div class="l-3">
+          <ul class="l-3Nav">
+            <li>
+              <a href="">
+                <em class="fab fa-buffer"></em>
+                专栏
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <em class="fa fa-flag"></em>
+                活动
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <em class="fa fa-boxes"></em>
+                小黑屋
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <em class="fa fa-camera"></em>
+                直播
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <em class="fab fa-hire-a-helper"></em>
+                课堂
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <em class="fa fa-music"></em>
+                音乐PLUS
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- 第二部分 -->
+    <div class="second-section">
+      <!-- 轮播部分 -->
+      <div class="autoShow">
+        <div class="autoshow-wrapper">
+          <a class="lubo" href="">
+            <img src="./img/lunbo1.png" />
+          </a>
+          <a class="lubo" href="">
+            <img src="./img/lunbo2.jpg" />
+          </a>
+          <a class="lubo" href="">
+            <img src="./img/lunbo3.jpg" />
+          </a>
+          <a class="lubo" href="">
+            <img src="./img/lunbo4.jpg" />
+          </a>
+          <a class="lubo" href="">
+            <img src="./img/lunbo5.jpg" />
+          </a>
+        </div>
+        <div class="tigger">
+          <!-- 此处轮播按钮由JS动态生成 -->
+        </div>
+      </div>
+
+      <div class="tuite">
+        <div class="t-1">
+          <img src="./img/tuite1.jpg" />
+          <div class="imgContent">
+            <h2>星云天空3000米世纪逃亡</h2>
+            <div class="up-Wrapper">
+              <span class="up">UP</span>沐沐秋
+              <p class="uppig">94.6W播放</p>
+            </div>
+          </div>
+        </div>
+        <div class="t-1">
+          <img src="./img/tuite2.jpg" />
+          <div class="imgContent">
+            <h2>东海帝王奇迹回归</h2>
+            <div class="up-Wrapper">
+              <span class="up">UP</span>沐沐秋
+              <p class="uppig">94.6W播放</p>
+            </div>
+          </div>
+        </div>
+        <div class="t-1">
+          <img src="./img/tuite3.jpg" />
+          <div class="imgContent">
+            <h2>无声铃鹿获得秋皇赏冠军</h2>
+            <div class="up-Wrapper">
+              <span class="up">UP</span>沐沐秋
+              <p class="uppig">94.6W播放</p>
+            </div>
+          </div>
+        </div>
+        <div class="t-1">
+          <img src="./img/tuite4.jpg" />
+          <div class="imgContent">
+            <h2>东海帝王奇迹回归</h2>
+            <div class="up-Wrapper">
+              <span class="up">UP</span>沐沐秋
+              <p class="uppig">94.6W播放</p>
+            </div>
+          </div>
+        </div>
+        <div class="t-1">
+          <img src="./img/tuite5.webp" />
+          <div class="imgContent">
+            <h2>阴阳师</h2>
+            <div class="up-Wrapper">
+              <span class="up">UP</span>沐沐秋
+              <p class="uppig">94.6W播放</p>
+            </div>
+          </div>
+        </div>
+        <div class="t-1">
+          <img src="./img/tuite6.webp" />
+          <div class="imgContent">
+            <h2>笑死！你管这叫日常动漫</h2>
+            <div class="up-Wrapper">
+              <span class="up">UP</span>沐沐秋
+              <p class="uppig">94.6W播放</p>
+            </div>
+          </div>
+        </div>
+        <div class="t-1">
+          <img src="./img/tuite5.jpg" />
+          <div class="imgContent">
+            <h2>不败的天才从此逝去</h2>
+            <div class="up-Wrapper">
+              <span class="up">UP</span>沐沐秋
+              <p class="uppig">94.6W播放</p>
+            </div>
+          </div>
+        </div>
+        <div class="t-1">
+          <img src="./img/tuite9.webp" />
+          <div class="imgContent">
+            <h2>好家伙,这是现场录制</h2>
+            <div class="up-Wrapper">
+              <span class="up">UP</span>沐沐秋
+              <p class="uppig">94.6W播放</p>
+            </div>
+          </div>
+        </div>
+        <div class="t-1">
+          <img src="./img/tuite1.jpg" />
+          <div class="imgContent">
+            <h2>星云天空3000米世纪逃亡</h2>
+            <div class="up-Wrapper">
+              <span class="up">UP</span>沐沐秋
+              <p class="uppig">94.6W播放</p>
+            </div>
+          </div>
+        </div>
+        <div class="t-1">
+          <img src="./img/tuite2.jpg" />
+          <div class="imgContent">
+            <h2>东海帝王奇迹回归</h2>
+            <div class="up-Wrapper">
+              <span class="up">UP</span>沐沐秋
+              <p class="uppig">94.6W播放</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 推广广告部分 -->
+
+    <div class="first-report-section">
+      <div class="f-left-wrapper">
+        <div class="f-left-header">
+          <div class="fa fa-paper-plane"></div>
+          <div style="font-size: 20px; margin-right: 20px">推广</div>
+          <div style="font-size: 12px; color: #505050; line-height: 24.8px">
+            <span
+              class="fa fa-fire"
+              style="color: #f0361b; font-size: 15px; margin-right: 5px"
+            ></span>
+            萌系星探官招募中
+          </div>
+        </div>
+        <div class="f-left-content">
+          <div>
+            <img src="./img/report1.webp" alt="" />
+            <p>剧场版大雄究竟有多强！</p>
+            <span class="up" style="color: #99a6c4; margin-top: 15px">UP</span
+            >沐沐秋
+          </div>
+          <div>
+            <img src="./img/report2.webp" alt="" />
+            <p>战斗吧！素质</p>
+            <span class="up" style="color: #99a6c4; margin-top: 15px">UP</span
+            >沐沐秋
+          </div>
+          <div>
+            <img src="./img/report3.webp" alt="" />
+            <p>耗时半年！up主用中文填词的</p>
+            <span class="up" style="color: #99a6c4; margin-top: 15px">UP</span
+            >沐沐秋
+          </div>
+          <div>
+            <img src="./img/report4.webp" alt="" />
+            <p>4K /60FPS紫罗兰永恒花园</p>
+            <span class="up" style="color: #99a6c4; margin-top: 15px">UP</span
+            >沐沐秋
+          </div>
+          <div>
+            <img src="./img/report1.webp" alt="" />
+            <p>剧场版大雄究竟有多强！</p>
+            <span class="up" style="color: #99a6c4; margin-top: 15px">UP</span
+            >沐沐秋
+          </div>
+          <div>
+            <img src="./img/report2.webp" alt="" />
+            <p>战斗吧！素质</p>
+            <span class="up" style="color: #99a6c4; margin-top: 15px">UP</span
+            >沐沐秋
+          </div>
+        </div>
+      </div>
+      <div class="f-right-wrapper">
+        <div class="f-right-header">
+          <h2>观看列表</h2>
+        </div>
+        <div class="f-right-content">
+          <img src="./img/fenli.jpg" style="width: 320px" />
+        </div>
+      </div>
+    </div>
+
+    <!--  -->
+    <div class="reportTitle">
+      <img src="./img/0c0a969cca0e880ce006ad13cba28e9c.jpg" alt="" />
+    </div>
+
+    <!-- 动画板块 -->
+    <div class="first-report-section">
+      <div class="f-left-wrapper f-other-2">
+        <div class="f-left-header">
+          <div
+            class="fab fa-centercode"
+            style="color: #9796ed; font-size: 25px; margin-right: 10px"
+          ></div>
+          <div style="font-size: 20px; margin-right: 20px">动画</div>
+        </div>
+        <div class="f-left-content other-1">
+          <div>
+            <img src="./img/flashSection/1.webp" alt="" />
+            <p style="text-overflow: ellipsis">
+              这么漂亮的居然是哥哥的女朋友？
+            </p>
+            <em class="bott-1">
+              <i
+                class="fa fa-video"
+                style="color: white; margin-right: 5px"
+              ></i>
+              <span style="margin-right: 15px">43.5万</span>
+              <i class="fa fa-mercury"></i>
+              <span>11.1万</span>
+              <i style="margin-left: 24px">01:43</i>
+            </em>
+            <span class="up" style="color: #999999; margin-top: 15px">UP</span
+            >沐沐秋
+          </div>
+          <div>
+            <img src="./img/flashSection/2.webp" alt="" />
+            <p>无声铃鹿卷土重来</p>
+            <em class="bott-1">
+              <i
+                class="fa fa-video"
+                style="color: white; margin-right: 5px"
+              ></i>
+              <span style="margin-right: 15px">43.5万</span>
+              <i class="fa fa-mercury"></i>
+              <span>11.1万</span>
+              <i style="margin-left: 24px">01:43</i>
+            </em>
+            <span class="up" style="color: #999999; margin-top: 15px">UP</span
+            >沐沐秋
+          </div>
+          <div>
+            <img src="./img/flashSection/3.webp" alt="" />
+            <p>此视频可能会拯救你的视力</p>
+            <em class="bott-1">
+              <i
+                class="fa fa-video"
+                style="color: white; margin-right: 5px"
+              ></i>
+              <span style="margin-right: 15px">43.5万</span>
+              <i class="fa fa-mercury"></i>
+              <span>11.1万</span>
+              <i style="margin-left: 24px">01:43</i>
+            </em>
+            <span class="up" style="color: #999999; margin-top: 15px">UP</span
+            >沐沐秋
+          </div>
+          <div>
+            <img src="./img/flashSection/4.webp" alt="" />
+            <p>某虚拟主播竟然？</p>
+            <em class="bott-1">
+              <i
+                class="fa fa-video"
+                style="color: white; margin-right: 5px"
+              ></i>
+              <span style="margin-right: 15px">43.5万</span>
+              <i class="fa fa-mercury"></i>
+              <span>11.1万</span>
+              <i style="margin-left: 24px">01:43</i>
+            </em>
+            <span class="up" style="color: #999999; margin-top: 15px">UP</span
+            >沐沐秋
+          </div>
+          <div>
+            <img src="./img/flashSection/5.webp" alt="" />
+            <p>究极社死？？？？</p>
+            <em class="bott-1">
+              <i
+                class="fa fa-video"
+                style="color: white; margin-right: 5px"
+              ></i>
+              <span style="margin-right: 15px">43.5万</span>
+              <i class="fa fa-mercury"></i>
+              <span>11.1万</span>
+              <i style="margin-left: 24px">01:43</i>
+            </em>
+            <span class="up" style="color: #999999; margin-top: 15px">UP</span
+            >沐沐秋
+          </div>
+          <div>
+            <img src="./img/flashSection/6.webp" alt="" />
+            <p>史诗级刀子片？时光代理人？？</p>
+            <em class="bott-1">
+              <i
+                class="fa fa-video"
+                style="color: white; margin-right: 5px"
+              ></i>
+              <span style="margin-right: 15px">43.5万</span>
+              <i class="fa fa-mercury"></i>
+              <span>11.1万</span>
+              <i style="margin-left: 24px">01:43</i>
+            </em>
+            <span class="up" style="color: #999999; margin-top: 15px">UP</span
+            >沐沐秋
+          </div>
+          <div>
+            <img src="./img/flashSection/7.webp" alt="" />
+            <p>耗时半年！up主用中文填词的</p>
+            <em class="bott-1">
+              <i
+                class="fa fa-video"
+                style="color: white; margin-right: 5px"
+              ></i>
+              <span style="margin-right: 15px">43.5万</span>
+              <i class="fa fa-mercury"></i>
+              <span>11.1万</span>
+              <i style="margin-left: 24px">01:43</i>
+            </em>
+            <span class="up" style="color: #999999; margin-top: 15px">UP</span
+            >沐沐秋
+          </div>
+          <div>
+            <img src="./img/flashSection/8.webp" alt="" />
+            <p>JOJO的奇妙冒险</p>
+            <em class="bott-1">
+              <i
+                class="fa fa-video"
+                style="color: white; margin-right: 5px"
+              ></i>
+              <span style="margin-right: 15px">43.5万</span>
+              <i class="fa fa-mercury"></i>
+              <span>11.1万</span>
+              <i style="margin-left: 24px">01:43</i>
+            </em>
+            <span class="up" style="color: #999999; margin-top: 15px">UP</span
+            >沐沐秋
+          </div>
+          <div>
+            <img src="./img/flashSection/2.webp" alt="" />
+            <p>无声铃鹿卷土重来</p>
+            <em class="bott-1">
+              <i
+                class="fa fa-video"
+                style="color: white; margin-right: 5px"
+              ></i>
+              <span style="margin-right: 15px">43.5万</span>
+              <i class="fa fa-mercury"></i>
+              <span>11.1万</span>
+              <i style="margin-left: 24px">01:43</i>
+            </em>
+            <span class="up" style="color: #999999; margin-top: 15px">UP</span
+            >沐沐秋
+          </div>
+          <div>
+            <img src="./img/flashSection/3.webp" alt="" />
+            <p>此视频可能会拯救你的视力</p>
+            <em class="bott-1">
+              <i
+                class="fa fa-video"
+                style="color: white; margin-right: 5px"
+              ></i>
+              <span style="margin-right: 15px">43.5万</span>
+              <i class="fa fa-mercury"></i>
+              <span>11.1万</span>
+              <i style="margin-left: 24px">01:43</i>
+            </em>
+            <span class="up" style="color: #999999; margin-top: 15px">UP</span
+            >沐沐秋
+          </div>
+          <div>
+            <img src="./img/flashSection/4.webp" alt="" />
+            <p>某虚拟主播竟然？</p>
+            <em class="bott-1">
+              <i
+                class="fa fa-video"
+                style="color: white; margin-right: 5px"
+              ></i>
+              <span style="margin-right: 15px">43.5万</span>
+              <i class="fa fa-mercury"></i>
+              <span>11.1万</span>
+              <i style="margin-left: 24px">01:43</i>
+            </em>
+            <span class="up" style="color: #999999; margin-top: 15px">UP</span
+            >沐沐秋
+          </div>
+          <div>
+            <img src="./img/flashSection/5.webp" alt="" />
+            <p>究极社死？？？？</p>
+            <em class="bott-1">
+              <i
+                class="fa fa-video"
+                style="color: white; margin-right: 5px"
+              ></i>
+              <span style="margin-right: 15px">43.5万</span>
+              <i class="fa fa-mercury"></i>
+              <span>11.1万</span>
+              <i style="margin-left: 24px">01:43</i>
+            </em>
+            <span class="up" style="color: #999999; margin-top: 15px">UP</span
+            >沐沐秋
+          </div>
+        </div>
+      </div>
+      <div class="f-right-wrapper f-r-other-2">
+        <div class="rank">
+          <h2>排行榜</h2>
+        </div>
+
+        <div class="f-right-content">
+          <ul class="rank-content-wrapper">
+            <li>
+              <i class="index">1</i>
+              <p class="rank-content">
+                军医：我们的部队不需要伤者（拔刀！）不需要伤者
+              </p>
+            </li>
+            <li>
+              <i class="index">2</i>
+              <p class="rank-content">当新冠疫苗进入体内之后</p>
+            </li>
+            <li>
+              <i class="index">3</i>
+              <p class="rank-content">哒 咩 哟 ~</p>
+            </li>
+            <li>
+              <i class="index i-1">4</i>
+              <p class="rank-content">耗时1个月，全长6.5米。手绘让子弹飞人物</p>
+            </li>
+            <li>
+              <i class="index i-1">5</i>
+              <p class="rank-content">
+                臭鱼烂虾？隐藏佳作？2021七月新番排雷+导视！！
+              </p>
+            </li>
+            <li>
+              <i class="index i-1">6</i>
+              <p class="rank-content">
+                世界规模最大3D渲染挑战赛前100名赏析：看艺术家如何演绎砥砺前行的人生
+              </p>
+            </li>
+            <li>
+              <i class="index i-1">7</i>
+              <p class="rank-content">【原神x崩坏3】我不做皇女啦！奥兹！</p>
+            </li>
+            <li>
+              <i class="index i-1">8</i>
+              <p class="rank-content">
+                火柴人 VS 我的世界系列 第二十四集 郁葱洞穴
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="reportTitle">
+      <img src="./img/report2.jpg" alt="" />
+    </div>
+
+    <!-- 番剧板块 -->
+
+    <div class="first-report-section">
+      <div class="f-left-wrapper f-other-2">
+        <div class="f-left-header">
+          <div style="font-size: 20px; margin-right: 20px">番剧动态</div>
+        </div>
+        <div class="f-left-content other-1 fanju">
+          <div>
+            <img src="./img/fanju/1.webp" alt="" />
+            <p style="text-overflow: ellipsis">家庭教师HITMAN REBORN!</p>
+            <em class="bott-1">
+              <i
+                class="fa fa-video"
+                style="color: white; margin-right: 5px"
+              ></i>
+              <span style="margin-right: 15px">43.5万</span>
+              <i class="fa fa-mercury"></i>
+              <span>11.1万</span>
+              <i style="margin-left: 24px">01:43</i>
+            </em>
+          </div>
+          <div>
+            <img src="./img/fanju/2.webp" alt="" />
+            <p>【4月】ConcreteRevolutio 超人幻想 19</p>
+            <em class="bott-1">
+              <i
+                class="fa fa-video"
+                style="color: white; margin-right: 5px"
+              ></i>
+              <span style="margin-right: 15px">43.5万</span>
+              <i class="fa fa-mercury"></i>
+              <span>11.1万</span>
+              <i style="margin-left: 24px">01:43</i>
+            </em>
+          </div>
+          <div>
+            <img src="./img/fanju/3.webp" alt="" />
+            <p>【1月】卫宫家今天的饭 01【独家正版】</p>
+            <em class="bott-1">
+              <i
+                class="fa fa-video"
+                style="color: white; margin-right: 5px"
+              ></i>
+              <span style="margin-right: 15px">43.5万</span>
+              <i class="fa fa-mercury"></i>
+              <span>11.1万</span>
+              <i style="margin-left: 24px">01:43</i>
+            </em>
+          </div>
+          <div>
+            <img src="./img/fanju/4.webp" alt="" />
+            <p>银魂 第三季 01</p>
+            <em class="bott-1">
+              <i
+                class="fa fa-video"
+                style="color: white; margin-right: 5px"
+              ></i>
+              <span style="margin-right: 15px">43.5万</span>
+              <i class="fa fa-mercury"></i>
+              <span>11.1万</span>
+              <i style="margin-left: 24px">01:43</i>
+            </em>
+          </div>
+          <div>
+            <img src="./img/fanju/5.webp" alt="" />
+            <p>【1月】巴克·亚罗/BACK ARROW 02【独家正版】？</p>
+            <em class="bott-1">
+              <i
+                class="fa fa-video"
+                style="color: white; margin-right: 5px"
+              ></i>
+              <span style="margin-right: 15px">43.5万</span>
+              <i class="fa fa-mercury"></i>
+              <span>11.1万</span>
+              <i style="margin-left: 24px">01:43</i>
+            </em>
+          </div>
+          <div>
+            <img src="./img/fanju/6.webp" alt="" />
+            <p>【合集】日常</p>
+            <em class="bott-1">
+              <i
+                class="fa fa-video"
+                style="color: white; margin-right: 5px"
+              ></i>
+              <span style="margin-right: 15px">43.5万</span>
+              <i class="fa fa-mercury"></i>
+              <span>11.1万</span>
+              <i style="margin-left: 24px">01:43</i>
+            </em>
+          </div>
+          <div>
+            <img src="./img/fanju/7.webp" alt="" />
+            <p>泽塔奥特曼 23</p>
+            <em class="bott-1">
+              <i
+                class="fa fa-video"
+                style="color: white; margin-right: 5px"
+              ></i>
+              <span style="margin-right: 15px">43.5万</span>
+              <i class="fa fa-mercury"></i>
+              <span>11.1万</span>
+              <i style="margin-left: 24px">01:43</i>
+            </em>
+          </div>
+          <div>
+            <img src="./img/fanju/8.webp" alt="" />
+            <p>【1月/完结】Re：从零开始的异世界生活 第二季 25</p>
+            <em class="bott-1">
+              <i
+                class="fa fa-video"
+                style="color: white; margin-right: 5px"
+              ></i>
+              <span style="margin-right: 15px">43.5万</span>
+              <i class="fa fa-mercury"></i>
+              <span>11.1万</span>
+              <i style="margin-left: 24px">01:43</i>
+            </em>
+          </div>
+          <div>
+            <img src="./img/flashSection/3.webp" alt="" />
+            <p>此视频可能会拯救你的视力</p>
+            <em class="bott-1">
+              <i
+                class="fa fa-video"
+                style="color: white; margin-right: 5px"
+              ></i>
+              <span style="margin-right: 15px">43.5万</span>
+              <i class="fa fa-mercury"></i>
+              <span>11.1万</span>
+              <i style="margin-left: 24px">01:43</i>
+            </em>
+            <span class="up" style="color: #999999; margin-top: 15px">UP</span
+            >沐沐秋
+          </div>
+          <div>
+            <img src="./img/flashSection/4.webp" alt="" />
+            <p>某虚拟主播竟然？</p>
+            <em class="bott-1">
+              <i
+                class="fa fa-video"
+                style="color: white; margin-right: 5px"
+              ></i>
+              <span style="margin-right: 15px">43.5万</span>
+              <i class="fa fa-mercury"></i>
+              <span>11.1万</span>
+              <i style="margin-left: 24px">01:43</i>
+            </em>
+            <span class="up" style="color: #999999; margin-top: 15px">UP</span
+            >沐沐秋
+          </div>
+          <div>
+            <img src="./img/flashSection/5.webp" alt="" />
+            <p>究极社死？？？？</p>
+            <em class="bott-1">
+              <i
+                class="fa fa-video"
+                style="color: white; margin-right: 5px"
+              ></i>
+              <span style="margin-right: 15px">43.5万</span>
+              <i class="fa fa-mercury"></i>
+              <span>11.1万</span>
+              <i style="margin-left: 24px">01:43</i>
+            </em>
+            <span class="up" style="color: #999999; margin-top: 15px">UP</span
+            >沐沐秋
+          </div>
+          <div>
+            <img src="./img/flashSection/6.webp" alt="" />
+            <p>史诗级刀子片？时光代理人？？</p>
+            <em class="bott-1">
+              <i
+                class="fa fa-video"
+                style="color: white; margin-right: 5px"
+              ></i>
+              <span style="margin-right: 15px">43.5万</span>
+              <i class="fa fa-mercury"></i>
+              <span>11.1万</span>
+              <i style="margin-left: 24px">01:43</i>
+            </em>
+            <span class="up" style="color: #999999; margin-top: 15px">UP</span
+            >沐沐秋
+          </div>
+        </div>
+      </div>
+      <div class="f-right-wrapper">
+        <div class="rank">
+          <h2>特别推荐</h2>
+        </div>
+
+        <div class="f-right-content">
+          <div class="secontAutoShow">
+            <a class="lubo2" href="">
+              <img src="./img/secondlunbo/1.webp" alt="" />
+            </a>
+            <a class="lubo2" href="">
+              <img src="./img/secondlunbo/2.webp" alt="" />
+            </a>
+            <a class="lubo2" href="">
+              <img src="./img/secondlunbo/3.webp" alt="" />
+            </a>
+            <a class="lubo2" href="">
+              <img src="./img/secondlunbo/4.webp" alt="" />
+            </a>
+          </div>
+
+          <div class="tigger2"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 漫画板块 -->
+
+    <div class="first-report-section">
+      <div class="f-left-wrapper">
+        <div class="f-left-header">
+          <div
+            class="fa fa-image"
+            style="color: #9796ed; font-size: 25px; margin-right: 10px"
+          ></div>
+          <div style="font-size: 20px; margin-right: 20px">漫画</div>
+        </div>
+        <div class="f-left-content">
+          <ul class="acgbookWrapper">
+            <li>
+              <img src="./img/acgBook/1.webp" alt="" />
+              <h3>步天歌</h3>
+              <p>古风 玄幻</p>
+            </li>
+            <li>
+              <img src="./img/acgBook/2.webp" alt="" />
+              <h3>罗小黑战记 蓝溪镇</h3>
+              <p>搞笑 治愈</p>
+            </li>
+            <li>
+              <img src="./img/acgBook/3.webp" alt="" />
+              <h3>那年那兔那些事</h3>
+              <p>热血</p>
+            </li>
+            <li>
+              <img src="./img/acgBook/4.webp" alt="" />
+              <h3>有兽焉</h3>
+              <p>搞笑 日常</p>
+            </li>
+            <li>
+              <img src="./img/acgBook/5.webp" alt="" />
+              <h3>大理寺日志</h3>
+              <p>古风 冒险</p>
+            </li>
+            <li>
+              <img src="./img/acgBook/6.webp" alt="" />
+              <h3>百妖普</h3>
+              <p>古风 治愈</p>
+            </li>
+            <li>
+              <img src="./img/acgBook/7.webp" alt="" />
+              <h3>少年歌行 风花雪月篇</h3>
+              <p>热血 冒险</p>
+            </li>
+            <li>
+              <img src="./img/acgBook/8.webp" alt="" />
+              <h3>镖人</h3>
+              <p>热血 古风</p>
+            </li>
+            <li>
+              <img src="./img/acgBook/9.webp" alt="" />
+              <h3>无脑魔女</h3>
+              <p>搞笑 日常</p>
+            </li>
+            <li>
+              <img src="./img/acgBook/10.webp" alt="" />
+              <h3>快把我哥带走</h3>
+              <p>搞笑 日常</p>
+            </li>
+            <li>
+              <img src="./img/acgBook/6.webp" alt="" />
+              <h3>百妖普</h3>
+              <p>古风 治愈</p>
+            </li>
+            <li>
+              <img src="./img/acgBook/7.webp" alt="" />
+              <h3>少年歌行 风花雪月篇</h3>
+              <p>热血 冒险</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="f-right-wrapper">
+        <div class="rank">
+          <h2>排行榜</h2>
+        </div>
+
+        <div class="f-right-content">
+          <ul class="rank-content-wrapper">
+            <li>
+              <i class="index">1</i>
+              <div style="display: flex; width: 90%; cursor: pointer">
+                <img src="./img/acgBook/right.webp" alt="1" />
+                <p>妹子太多，只好飞升了</p>
+              </div>
+            </li>
+            <li>
+              <i class="index">2</i>
+              <div class="r-r-1">
+                <p class="rank-content">天官赐福</p>
+                <em>更新至54话</em>
+              </div>
+            </li>
+            <li>
+              <i class="index">3</i>
+              <div class="r-r-1">
+                <p class="rank-content">咒术回战</p>
+                <em>更新至公告</em>
+              </div>
+            </li>
+            <li>
+              <i class="index i-1">4</i>
+
+              <div class="r-r-1">
+                <p class="rank-content">幽冥诡匠</p>
+                <em>更新至12话</em>
+              </div>
+            </li>
+            <li>
+              <i class="index i-1">5</i>
+
+              <div class="r-r-1">
+                <p class="rank-content">两不疑</p>
+              </div>
+            </li>
+            <li>
+              <i class="index i-1">6</i>
+
+              <div class="r-r-1">
+                <p class="rank-content">入间同学入魔了</p>
+                <em>更新至45话</em>
+              </div>
+            </li>
+            <li>
+              <i class="index i-1">7</i>
+
+              <div class="r-r-1">
+                <p class="rank-content">碧蓝之海</p>
+                <em>更新至112话</em>
+              </div>
+            </li>
+            <li>
+              <i class="index i-1">8</i>
+
+              <div class="r-r-1">
+                <p class="rank-content">反派初始化</p>
+                <em>更新至24话</em>
+              </div>
+            </li>
+            <li>
+              <i class="index i-1">9</i>
+
+              <div class="r-r-1">
+                <p class="rank-content">破云</p>
+                <em>更新至34话</em>
+              </div>
+            </li>
+            <li>
+              <i class="index i-1">10</i>
+
+              <div class="r-r-1">
+                <p class="rank-content">辉夜大小姐</p>
+                <em>更新至111话</em>
+              </div>
+            </li>
+            <li>
+              <i class="index i-1">11</i>
+
+              <div class="r-r-1">
+                <p class="rank-content">罗小黑战记 蓝溪镇</p>
+                <em>更新至45话</em>
+              </div>
+            </li>
+            <li>
+              <i class="index i-1">12</i>
+
+              <div class="r-r-1">
+                <p class="rank-content">航海王</p>
+                <em>更新至1112话</em>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer部分 -->
+    <footer>
+      <div class="end-wrapepr">
+        <div class="end-header">
+          <div style="border-right: 1px solid #eeeeee; margin-right: 35px">
+            <h2 class="end-title">bilibili</h2>
+            <ul class="aboutSection">
+              <li>关于我们</li>
+              <li>友情链接</li>
+              <li>联系我们</li>
+              <li>隐私政策</li>
+              <li>用户协议</li>
+              <li>bilibili认证</li>
+              <li>加入我们</li>
+              <li>investor Relation</li>
+            </ul>
+          </div>
+          <div style="border-right: 1px solid #eeeeee; width: 45%">
+            <h2 class="end-title">传送门</h2>
+            <ul class="aboutSection s-2">
+              <li>协议汇总</li>
+              <li>帮助中心</li>
+              <li>名人堂</li>
+              <li>活动中心</li>
+              <li>用户反馈论坛</li>
+              <li>MCN管理中心</li>
+              <li>活动专题页</li>
+              <li>壁纸站</li>
+              <li>高级弹幕</li>
+              <li>侵权申诉</li>
+              <li>广告合作</li>
+              <li>企业号官网</li>
+            </ul>
+          </div>
+          <div class="downloadWrapper">
+            <ul class="download">
+              <li>
+                <i class="fa fa-download"></i>
+                <p>下载APP</p>
+              </li>
+              <li>
+                <i
+                  class="fab fa-weibo"
+                  style="background-color: #fe596c; font-size: 25px"
+                ></i>
+                <p>新浪微博</p>
+              </li>
+              <li>
+                <i
+                  class="fab fa-weixin"
+                  style="background-color: #42c86b; font-size: 25px"
+                ></i>
+                <p>官方微信</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="builderInfo">
+        <p>开发者：王文政<span>QQ：1635633816</span></p>
+      </div> -->
+      <style>
+        .builderInfo {
+          height: 20px;
+          width: 600px;
+          margin: 0 auto;
+          text-align: center;
+          margin-bottom: 30px;
+          font-size: 20px;
+          color: #505050;
+          /* background-color: #999999; */
+        }
+      </style>
+    </footer>
+  </body>
+  <script>
+    const vidContainer = document.querySelector(".vidContainer");
+    const vid = document.querySelector(".vid");
+
+    vidContainer.addEventListener("mouseenter", function (e) {
+      this.x = e.clientX;
+      vid.style.transition = "none";
+    });
+    vidContainer.addEventListener("mousemove", function (e) {
+      this._x = e.clientX;
+      const disx = this._x - this.x;
+      const move = 0 - disx / -30;
+      vid.style.transform = "translate(" + move + "px, 0px)";
+    });
+    vidContainer.addEventListener("mouseleave", function (e) {
+      vid.style.transition = ".3s ";
+      vid.style.transform = "translate(0,0)";
+    });
+  </script>
+  <script src="./js/jquery-1.12.4.min.js"></script>
+  <script src="./js/index.js"></script>
+  <script src="./js/lunbo2.js"></script>
+</html>
